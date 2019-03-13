@@ -1,0 +1,176 @@
+/* CSS for Jim Clark's portfolio */
+a {
+  color: #999;
+
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.coming-soon-label {
+  background-color: #3FAAA5;
+  color: white;
+  font-size: 18px;
+  width: 220px;
+  height: 35px;
+  margin: 25px;
+  padding-top: 12px;
+  position: absolute;
+  text-align: center;
+  top: 105px;
+}
+
+/* .contact-list-item-link {
+  float: left;
+} */
+
+.contact-list-item:last-child{
+  padding-bottom: 50px;
+}
+
+.content {
+  background: white;
+  margin: 0px 15% 0px;;
+}
+
+.content p {
+  line-height: 2;
+  font-size: 20px;
+  color: #777;
+  padding: 0 15px 25px 15px;
+}
+
+.content-wrapper {
+  background: url("../images/dark-honeycomb.png");
+  min-height: 700px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.content-header {
+  color: #3FAAA5;
+  font-size: 2em;
+  margin: 0px 0px 0px 0px;
+  padding: 15px;
+  width: 250px;
+}
+
+.content-header-horizontal-rule {
+  border-top: 2px solid rgba(153, 153, 153, .2);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin: 0 15px 20px 15px;
+}
+
+form {
+  color: #777;
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+form button {
+  color: white;
+  background-color: #3FAAA5;
+  border-radius: 3px;
+  font-size: 20px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  width: 100px;
+}
+
+form input, form textarea {
+  color: #777;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 15px 0px;
+  padding: 10px 10px; 
+  resize: none;
+  vertical-align: top;
+}
+
+.form-input-large {
+  width: 90%;
+  height: 150px; 
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+footer {
+  border-top: 5px solid #3FAAA5;
+}
+.footer-image {
+  height: 50px;
+  width: 50px;
+}
+
+footer.flex-wrapper {
+  justify-content: center;
+}
+
+.nav-item:nth-child(even) {
+  border-left: 2px solid rgba(153, 153, 153, .3);
+  border-right: 2px solid rgba(153, 153, 153, .3);
+  padding: 0px 15px;
+}
+
+.margin-wrapper {
+  margin: 0 15%;
+}
+
+.name {
+  background-color: #3FAAA5;
+  color: white;
+  padding: 15px;
+  margin: 0px 0px 0px 0px;
+  width: 150px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item, .contact-list-item {
+  align-self: auto;
+  list-style-type: none;
+  height: 25px;
+  width: 80px;
+  padding: 0 10px; 
+}
+
+.nav-item a {
+  color: #999;
+  font-size: 22px;
+  text-decoration: none; 
+}
+
+.portfolio-image {
+  height: 165px;
+  width: 220px;
+  padding: 25px;
+}
+
+.profile-image {
+  float: left;
+  padding-right: 15px;
+}
+
+.project-wrapper {
+  position: relative;
+}
+
+.space-between {
+  justify-content: space-around;
+}
+
+
