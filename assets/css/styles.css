@@ -1,8 +1,8 @@
 /* CSS for Jim Clark's portfolio */
 a {
   color: #999;
-
 }
+
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -26,9 +26,9 @@ a {
   top: 105px;
 }
 
-/* .contact-list-item-link {
-  float: left;
-} */
+.submit-button:hover {
+  background-color: #26918C;
+}
 
 .contact-list-item:last-child{
   padding-bottom: 50px;
@@ -73,17 +73,6 @@ form {
   color: #777;
   font-size: 18px;
   padding-left: 25px;
-}
-
-form button {
-  color: white;
-  background-color: #3FAAA5;
-  border-radius: 3px;
-  font-size: 20px;
-  height: 50px;
-  margin-bottom: 50px;
-  margin-top: 25px;
-  width: 100px;
 }
 
 form input, form textarea {
@@ -167,6 +156,17 @@ footer.flex-wrapper {
 
 .project-wrapper {
   position: relative;
+}
+
+.submit-button {
+  color: white;
+  background-color: #3FAAA5;
+  border-radius: 3px;
+  font-size: 20px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  width: 100px;
 }
 
 .space-between {
