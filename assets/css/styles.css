@@ -98,6 +98,7 @@ form input, form textarea {
 footer {
   border-top: 5px solid #3FAAA5;
 }
+
 .footer-image {
   height: 50px;
   width: 50px;
@@ -183,4 +184,70 @@ footer.flex-wrapper {
   background-color: #26918C;
 }
 
+@media only screen and (max-width: 700px) {
+  
+  .contact-list-item {
+    display: block;
+    align-self: auto;
+    margin-bottom: 25px;
 
+  }
+  .content {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .content-wrapper {
+    padding-top: 10px;
+    min-height: 0px;
+  }
+  
+  .content p {
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 0 15px 25px 15px;
+  }
+
+  .margin-wrapper {
+    margin: 0 0 0 15px;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    float: left;
+    padding-right: 15px;
+    height: 150px;
+    width: 150px;
+  }
+
+}
+
+
+  @media only screen and (max-width: 470px) {
+    
+    .content {
+      width: 100%;
+      margin: 0px;
+    }
+
+
+    
+    .content p {
+      line-height: 1.5;
+      font-size: 20px;
+      padding: 0 15 px 25px 15px;
+    }
+
+/* Need some sort of menu widget change at this breakpoint*/
+
+    .profile-image {
+      float: left;
+      padding-right: 15px;
+      height: 125px;
+      width: 125px;
+    }
+
+}
