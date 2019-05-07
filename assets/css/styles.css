@@ -31,10 +31,6 @@ a:hover {
   top: 105px;
 }
 
-.contact-list-item:last-child {
-  padding-bottom: 50px;
-}
-
 .content {
   background: white;
   margin: 0px 15% 0px;
@@ -140,6 +136,7 @@ footer.flex-wrapper {
   height: 25px;
   width: 80px;
   padding: 0 10px;
+  padding-bottom: 50px;
 }
 
 .nav-item a {
