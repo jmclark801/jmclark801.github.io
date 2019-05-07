@@ -3,7 +3,7 @@ a {
   color: #999;
 }
 
-a:hover { 
+a:hover {
   color: #777;
   font-weight: 500;
 }
@@ -31,13 +31,14 @@ a:hover {
   top: 105px;
 }
 
-.contact-list-item:last-child{
+.contact-list-item:last-child {
   padding-bottom: 50px;
 }
 
 .content {
   background: white;
-  margin: 0px 15% 0px;;
+  margin: 0px 15% 0px;
+  ;
 }
 
 .content p {
@@ -76,19 +77,20 @@ form {
   padding-left: 25px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   color: #777;
   font-size: 20px;
   line-height: 24px;
   margin: 15px 0px;
-  padding: 10px 10px; 
+  padding: 10px 10px;
   resize: none;
   vertical-align: top;
 }
 
 .form-input-large {
   width: 90%;
-  height: 150px; 
+  height: 150px;
 }
 
 .flex-wrapper {
@@ -131,21 +133,22 @@ footer.flex-wrapper {
   justify-content: space-between;
 }
 
-.nav-item, .contact-list-item {
+.nav-item,
+.contact-list-item {
   align-self: auto;
   list-style-type: none;
   height: 25px;
   width: 80px;
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 .nav-item a {
   color: #999;
   font-size: 22px;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-.nav-item a:hover { 
+.nav-item a:hover {
   color: #777;
   font-weight: 500;
 }
@@ -192,13 +195,14 @@ footer.flex-wrapper {
 }
 
 @media only screen and (max-width: 700px) {
-  
+
   .contact-list-item {
     display: block;
     align-self: auto;
     margin-bottom: 25px;
 
   }
+
   .content {
     width: 100%;
     margin: 0px;
@@ -208,7 +212,7 @@ footer.flex-wrapper {
     padding-top: 10px;
     min-height: 0px;
   }
-  
+
   .content p {
     line-height: 1.5;
     font-size: 20px;
@@ -232,26 +236,26 @@ footer.flex-wrapper {
 
 }
 
-  @media only screen and (max-width: 470px) {
-    
-    .content {
-      width: 100%;
-      margin: 0px;
-    }
+@media only screen and (max-width: 470px) {
 
-    .content p {
-      line-height: 1.5;
-      font-size: 20px;
-      padding: 0 15 px 25px 15px;
-    }
+  .content {
+    width: 100%;
+    margin: 0px;
+  }
 
-/* Need some sort of menu widget change at this breakpoint*/
+  .content p {
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 0 15 px 25px 15px;
+  }
 
-    .profile-image {
-      float: left;
-      padding-right: 15px;
-      height: 125px;
-      width: 125px;
-    }
+  /* Need some sort of menu widget change at this breakpoint*/
+
+  .profile-image {
+    float: left;
+    padding-right: 15px;
+    height: 125px;
+    width: 125px;
+  }
 
 }
