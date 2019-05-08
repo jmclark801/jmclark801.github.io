@@ -19,7 +19,7 @@ a:hover {
 }
 
 .coming-soon-label {
-  background-color: #3FAAA5;
+  background-color: #3faaa5;
   color: white;
   font-size: 18px;
   width: 300px;
@@ -46,7 +46,6 @@ a:hover {
 .content {
   background: white;
   margin: 0px 15% 0px;
-  ;
 }
 
 .content p {
@@ -64,7 +63,7 @@ a:hover {
 }
 
 .content-header {
-  color: #3FAAA5;
+  color: #3faaa5;
   font-size: 2em;
   margin: 0px 0px 0px 0px;
   padding: 15px;
@@ -72,7 +71,7 @@ a:hover {
 }
 
 .content-header-horizontal-rule {
-  border-top: 2px solid rgba(153, 153, 153, .2);
+  border-top: 2px solid rgba(153, 153, 153, 0.2);
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -106,7 +105,7 @@ form textarea {
 }
 
 footer {
-  border-top: 5px solid #3FAAA5;
+  border-top: 5px solid #3faaa5;
 }
 
 .footer-image {
@@ -121,12 +120,11 @@ footer.flex-wrapper {
 li a {
   font-size: 18px;
   text-decoration: none;
-  
 }
 
 .nav-item:nth-child(even) {
-  border-left: 2px solid rgba(153, 153, 153, .3);
-  border-right: 2px solid rgba(153, 153, 153, .3);
+  border-left: 2px solid rgba(153, 153, 153, 0.3);
+  border-right: 2px solid rgba(153, 153, 153, 0.3);
   padding: 0px 15px;
 }
 
@@ -135,7 +133,7 @@ li a {
 }
 
 .name {
-  background-color: #3FAAA5;
+  background-color: #3faaa5;
   color: white;
   padding: 15px;
   margin: 0px 0px 0px 0px;
@@ -156,7 +154,6 @@ li a {
   padding-bottom: 50px;
 }
 
-
 .nav-item a {
   color: #999;
   font-size: 22px;
@@ -169,14 +166,28 @@ li a {
 }
 
 .portfolio-image {
-  height: 150px;
-  width: 300px;
+  height: 500px;
+  width: 800px;
   padding: 25px;
 }
 
 .profile-image {
   float: left;
   padding-right: 15px;
+}
+
+.portfolio-navigation {
+  background: #777;
+  color: #96cad5;
+  font-size: 24px;
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 15px;
+  width: 120px;
+}
+
+.portfolio-navigation-item {
+  padding: 10px;
 }
 
 .projects-wrapper {
@@ -196,7 +207,7 @@ li a {
 
 .submit-button {
   color: white;
-  background-color: #3FAAA5;
+  background-color: #3faaa5;
   border-radius: 4px;
   font-size: 20px;
   height: 50px;
@@ -206,16 +217,14 @@ li a {
 }
 
 .submit-button:hover {
-  background-color: #26918C;
+  background-color: #26918c;
 }
 
 @media only screen and (max-width: 700px) {
-
   .contact-list-item {
     display: block;
     align-self: auto;
     margin-bottom: 25px;
-
   }
 
   .content {
@@ -248,11 +257,9 @@ li a {
     height: 150px;
     width: 150px;
   }
-
 }
 
 @media only screen and (max-width: 470px) {
-
   .content {
     width: 100%;
     margin: 0px;
@@ -272,5 +279,4 @@ li a {
     height: 125px;
     width: 125px;
   }
-
 }
