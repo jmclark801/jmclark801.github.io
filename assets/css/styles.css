@@ -117,6 +117,10 @@ footer.flex-wrapper {
   justify-content: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li a {
   font-size: 18px;
   text-decoration: none;
@@ -140,7 +144,7 @@ li a {
   width: 150px;
 }
 
-.navigation {
+#main-navigation {
   display: flex;
   justify-content: space-between;
 }
@@ -166,8 +170,8 @@ li a {
 }
 
 .portfolio-image {
-  height: 500px;
-  width: 800px;
+  height: 400px;
+  width: 600px;
   padding: 25px;
 }
 
