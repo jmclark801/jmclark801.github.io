@@ -1,0 +1,150 @@
+/* newIndex.html Styles */
+/* main colors 
+#25527B - blue-grey
+#5DADBE - teal*/
+
+
+/* Animations */
+@keyframes typing {
+  from { width: 0 } 
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #25527B }
+}
+
+/* Universal Styles */
+html {
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+/* Content Styles */
+
+.content {
+  margin: 0 15%;
+  min-height: 80vh;
+}
+
+.content-white {
+  background-color: whitesmoke;
+}
+
+.content--light {
+  background-color: #EEE;
+  color: #25527B;
+
+}
+
+.content--dark {
+  background-color: #333;
+  color: #5DADBE;
+}
+
+#intro {
+  background-image: url('../images/logo_transparent.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.typewriter {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+}
+
+.typewriter h1 {
+  /* Styling */
+  border-right: .15em solid #25527B;
+  font-family: monospace;
+  letter-spacing: .10em;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Animation */
+  animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+
+
+/* old stuff  */
+.margin-wrapper {
+  margin: 0 15%;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+footer {
+  border-top: 5px solid #5DADBE;
+}
+
+.footer-image {
+  height: 50px;
+  width: 50px;
+}
+
+footer.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  background-color: #5DADBE;
+  color: white;
+  padding: 15px;
+  margin: 0px 0px 0px 0px;
+  width: 350px;
+}
+
+#main-navigation {
+  display: flex;
+  padding: 15px;
+  margin: 0px 0px 0px 0px;
+  width: 350px;
+}
+
+#main-navigation > .nav-item {
+  align-self: auto;
+  list-style-type: none;
+  height: 25px;
+  width: 110px;
+  padding: 0 15px;
+  padding-bottom: 50px;
+}
+
+.nav-item {
+  align-self: auto;
+  list-style-type: none;
+}
+
+.nav-item a {
+  color: #999;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #777;
+  font-weight: 500;
+}
+
+.nav-item:nth-child(even) {
+  border-left: 2px solid rgba(153, 153, 153, 0.3);
+  border-right: 2px solid rgba(153, 153, 153, 0.3);
+  padding: 0px 15px;
+}
