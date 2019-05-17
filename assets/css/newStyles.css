@@ -3,6 +3,7 @@
 #25527B - blue-grey
 #5DADBE - teal*/
 /* #333 - dark content background */
+/* whitesmoke = offwhite  */
 
 /* Animations */
 @keyframes typing {
@@ -51,6 +52,9 @@ body {
 
 .content {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
 }
 
 .content--white {
@@ -61,13 +65,17 @@ body {
 }
 
 .content--light {
-  background-color: #EEE;
+  background-color: whitesmoke;
   color: #25527B;
 }
 
 .content--dark {
   background-color: #333;
   color: #5DADBE;
+}
+
+.content--dark p {
+  color: whitesmoke;
 }
 
 h2 {
@@ -82,8 +90,8 @@ hr {
   border-right: none;
   border-bottom: none;
   margin-bottom: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #image_profile {
@@ -96,6 +104,14 @@ hr {
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+.image_portfolio {
+  object-fit: cover;
+  width: 100%;
+  margin: 15px 0px 30px;
+  max-height: 100%;
+  
 }
 
 #intro {
@@ -111,11 +127,6 @@ hr {
 
 p {
   color: #444;
-}
-
-#profile {
-  display: flex;
-  justify-content: center;
 }
 
 .typewriter {
@@ -214,7 +225,7 @@ footer.flex-wrapper {
 /* Media Queries  */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 80%;
   }
 }
