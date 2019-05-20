@@ -115,6 +115,15 @@ hr {
   text-align: center;
 }
 
+ul.list_style--none {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.list_style--none > li {
+  padding-top: 15px;
+}
+
 .image_portfolio {
   object-fit: cover;
   width: 100%;
@@ -165,6 +174,11 @@ p {
   padding: 15px;
   margin: 0px 0px 0px 0px;
   width: 350px;
+}
+
+.skill-level {
+  float: right;
+  margin-right: 20px;
 }
 
 .typewriter-wrapper {
@@ -284,7 +298,7 @@ footer.flex-wrapper {
 }
 
 #portfolio figure .icon {
-  background: #25527B;
+  background: #5DADBE;
   position: absolute;
   top: 0px;
   right: 0px;
