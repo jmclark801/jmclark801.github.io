@@ -5,7 +5,9 @@
 /* #333 - dark content background */
 /* whitesmoke = offwhite  */
 
-/* Animations */
+/*----------------------
+  Typewriter Animations
+----------------------*/
 @keyframes typing {
   from {
     width: 0
@@ -28,17 +30,24 @@
   }
 }
 
-/* Universal Styles */
+/*--------------------
+  General Page Styles
+---------------------*/
 html {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
 }
 
 body {
   position: relative;
 }
 
-/* Content Styles */
 .contact>a {
   color: #5DADBE;
   font-size: 40px;
@@ -111,7 +120,7 @@ hr {
   width: 100%;
   margin: 15px 0px 30px;
   max-height: 100%;
-  
+
 }
 
 #intro {
@@ -146,20 +155,25 @@ p {
   animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
 }
 
-.typewriter-wrapper {
-  min-height: 80%;
-}
-
-/* old stuff  */
 .margin-wrapper {
   margin: 0 15%;
 }
 
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0px;
+.name {
+  background-color: #5DADBE;
+  color: white;
+  padding: 15px;
+  margin: 0px 0px 0px 0px;
+  width: 350px;
 }
+
+.typewriter-wrapper {
+  min-height: 80%;
+}
+
+/* ---------------
+  Footer
+-----------------*/
 
 footer {
   border-top: 5px solid #5DADBE;
@@ -176,13 +190,10 @@ footer.flex-wrapper {
   justify-content: center;
 }
 
-.name {
-  background-color: #5DADBE;
-  color: white;
-  padding: 15px;
-  margin: 0px 0px 0px 0px;
-  width: 350px;
-}
+
+/* ---------------
+  Navigation
+-----------------*/
 
 #main-navigation {
   display: flex;
@@ -222,7 +233,149 @@ footer.flex-wrapper {
   padding: 0px 15px;
 }
 
-/* Media Queries  */
+/*---------------
+  Image Effects
+---------------*/
+#projects .row>div {
+  margin-bottom: 30px;
+}
+
+#projects figure {
+  position: relative;
+  overflow: hidden;
+}
+
+#projects figure h3 {
+  color: #FFF;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#projects figure p>strong {
+  width: 60px;
+  display: inline-block;
+  margin: 0px;
+}
+
+#projects figure img {
+  width: 110%;
+}
+
+#portfolio figure figcaption {
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio figure .icon {
+  background: #25527B;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+#portfolio figure .icon span {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 15px;
+}
+
+figure.effect {
+  background: #5DADBE;
+  color: #FFF;
+}
+
+figure.effect img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+  opacity: 0.15 ;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect figcaption {
+  padding-left: 15px;
+  text-align: left;
+}
+
+figure.effect h3 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+  opacity: 1;
+}
+
+figure.effect h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform .35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.effect:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ---------------
+  Media Queries  
+-----------------*/
 @media screen and (min-width: 1200px) {
   .container {
     width: 80%;
