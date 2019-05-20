@@ -1,10 +1,6 @@
-/* newIndex.html Styles */
-/* main colors 
-#25527B - blue-grey
-#5DADBE - teal*/
-/* #333 - dark content background */
-/* whitesmoke = offwhite  */
-
+/*----------------------
+  Animations
+----------------------*/
 /*----------------------
   Typewriter Animations
 ----------------------*/
@@ -117,7 +113,7 @@ hr {
 
 ul.list_style--none {
   list-style-type: none;
-  padding-left: 0px;
+  padding: 0px;
 }
 
 ul.list_style--none > li {
@@ -127,9 +123,7 @@ ul.list_style--none > li {
 .image_portfolio {
   object-fit: cover;
   width: 100%;
-  margin: 15px 0px 30px;
   max-height: 100%;
-
 }
 
 #intro {
@@ -176,6 +170,14 @@ p {
   width: 350px;
 }
 
+.skills > li:hover {
+  background-color: #bbb;
+}
+
+.skills > li {
+  padding: 0px 0px 8px 0px;
+}
+
 .skill-level {
   float: right;
   margin-right: 20px;
@@ -203,7 +205,6 @@ footer.flex-wrapper {
   align-items: center;
   justify-content: center;
 }
-
 
 /* ---------------
   Navigation
@@ -246,6 +247,7 @@ footer.flex-wrapper {
   border-right: 2px solid rgba(153, 153, 153, 0.3);
   padding: 0px 15px;
 }
+
 
 /*---------------
   Image Effects
@@ -301,9 +303,10 @@ footer.flex-wrapper {
   background: #5DADBE;
   position: absolute;
   top: 0px;
-  right: 0px;
-  width: 48px;
-  height: 48px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
 }
 
 #portfolio figure .icon span {
